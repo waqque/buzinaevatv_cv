@@ -11,7 +11,7 @@ rect = 0
 regions = regionprops(labeled, intensity_image=gray)
 for region in regions:
     ecc = region.eccentricity  
-    if ecc < 0.7 :
+    if ecc < 0.2 :
             circles += 1
     else: 
             rect += 1
